@@ -31,3 +31,17 @@ class SolutionRefactored(object):
         return  res
 
 
+#a faster solution
+class SolutionRefactoredAgain(object):
+
+    def runningSum(self, nums):
+
+        res = []
+        temp = 0
+        for n in nums:
+            res.append(temp + n)
+            temp += n
+
+        return  res
+
+
