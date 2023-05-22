@@ -66,3 +66,22 @@ class SolutionRefactoredYetAgain(object):
 
         return res
 
+#here is another solution extracted from the same video, but it overwrites the original input, dangerous, but nonetheless interesting
+class SolutionRefactoredOneMoreTime(object):
+
+    def runningSum(self, nums):
+
+        """
+
+        :type nums: List[int]
+
+        :rtype: List[int]
+
+        """
+
+        for i in range(1, len(nums)):
+
+            nums[i] += nums[i - 1]
+
+        return nums
+
