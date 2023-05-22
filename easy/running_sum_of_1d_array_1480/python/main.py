@@ -31,7 +31,7 @@ class SolutionRefactored(object):
         return  res
 
 
-#a faster solution
+#a faster solution, because sum is not being used, time and space complexities remain the same, I guess =)
 class SolutionRefactoredAgain(object):
 
     def runningSum(self, nums):
