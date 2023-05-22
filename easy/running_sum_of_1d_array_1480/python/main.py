@@ -45,3 +45,24 @@ class SolutionRefactoredAgain(object):
         return  res
 
 
+#refactored solution based on the solution video, very clever, indeed
+class SolutionRefactoredYetAgain(object):
+
+    def runningSum(self, nums):
+
+        """
+
+        :type nums: List[int]
+
+        :rtype: List[int]
+
+        """
+
+        res = [nums[0]]
+
+        for i in range(1, len(nums)):
+
+            res.append(nums[i] + res[i - 1])
+
+        return res
+
